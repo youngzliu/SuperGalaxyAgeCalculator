@@ -28,7 +28,7 @@ export class AgeCalculator{
   convertMars(age = 0){
     const marsCoeff = 1.88;
     if (age === 0){
-      parseFloat((this.age / marsCoeff).toFixed(2));
+      return parseFloat((this.age / marsCoeff).toFixed(2));
     }
     return parseFloat((age / marsCoeff).toFixed(2));
   }
@@ -54,6 +54,6 @@ export class AgeCalculator{
     ageMultiplier -= this.badHabits * .05;
     ageMultiplier += this.income * .03;
     let expectedAge = averageAge * ageMultiplier;
-    return expectedAge - this.age;
+    return parseFloat((expectedAge - this.age).toFixed(2));
   }
 }

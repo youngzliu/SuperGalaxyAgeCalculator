@@ -4,11 +4,41 @@
     <title>Super Galaxy Age Calculator</title>
   </head>
   <body>
-    <!-- <form id="ping-pong-form">
-      <label for="goal">Enter a number:</label>
-      <input id="goal" type="number">
-      <button type="submit">Submit</button>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome to the Super Galaxy Age Calculator!</h1>
+    </div>
+    <form id="galaxyForm">
+      <div class="form-group">
+        <label for="age">Enter you age in years:</label>
+        <input id="age" type="number" class="form-control" placeholder="Age in years" required>
+      </div>
+      <h2>What gender do you identify as?</h2>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" value="female" required>
+        <label class="form-check-label" for="inlineRadio1">Female</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" value="male" required>
+        <label class="form-check-label" for="inlineRadio2">Male</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" value="other" required>
+        <label class="form-check-label" for="inlineRadio2">Non-Binary/Other</label>
+      </div>
+      <select class="custom-select">
+        <option selected disabled hidden>Open this select menu</option>
+        <option value="1">None</option>
+        <option value="2">Once a week</option>
+        <option value="3">Two - Three times a week</option>
+        <option value="3">Two - Three times a week</option>
+        <option value="3">Two - Three times a week</option>
+      </select>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    <ul id="solution"></ul> -->
+    <div class="Results">
+    </div>
+  </div>
   </body>
 </html>
