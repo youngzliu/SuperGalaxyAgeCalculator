@@ -10,34 +10,68 @@
     </div>
     <form id="galaxyForm">
       <div class="form-group">
-        <label for="age">Enter you age in years:</label>
+        <label for="age"><h3>Enter you age in years:</h3></label>
         <input id="age" type="number" class="form-control" placeholder="Age in years" required>
       </div>
-      <h2>What gender do you identify as?</h2>
+      <h3>What gender do you identify as?</h3>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="gender" value="female" required>
-        <label class="form-check-label" for="inlineRadio1">Female</label>
+        <input class="form-check-input" type="radio" name="gender" value="female" id="female" required>
+        <label class="form-check-label" for="female">Female</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="gender" value="male" required>
-        <label class="form-check-label" for="inlineRadio2">Male</label>
+        <input class="form-check-input" type="radio" name="gender" value="male" id="male" required>
+        <label class="form-check-label" for="male">Male</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="gender" value="other" required>
-        <label class="form-check-label" for="inlineRadio2">Non-Binary/Other</label>
+        <input class="form-check-input" type="radio" name="gender" value="nonbinary" id="nonbinary" required>
+        <label class="form-check-label" for="nonbinary">Non-Binary</label>
       </div>
-      <select class="custom-select">
-        <option selected disabled hidden>Open this select menu</option>
-        <option value="1">None</option>
-        <option value="2">Once a week</option>
-        <option value="3">Two - Three times a week</option>
-        <option value="3">Two - Three times a week</option>
-        <option value="3">Two - Three times a week</option>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" value="other" id="other" required>
+        <label class="form-check-label" for="other">Other</label>
+      </div>
+      <br>
+      <br>
+      <h3>How often do you exercise?</h3>
+      <select class="custom-select" id="exerciseInput" required>
+        <option selected disabled hidden value="">Please select an option</option>
+        <option value="0">None</option>
+        <option value="1">Once a week</option>
+        <option value="2">Two - Three times a week</option>
+        <option value="3">Four - Five times a week</option>
+        <option value="4">Two - Three times a week</option>
       </select>
-
+      <br>
+      <br>
+      <h3>Do you do any of these things? Be honest!</h3>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="smoke" name="habits">
+        <label class="custom-control-label" for="smoke">Smoke cigarettes</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="drug" name="habits">
+        <label class="custom-control-label" for="drug">Regular recreational drug use</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="alcohol" name="habits">
+        <label class="custom-control-label" for="alcohol">Excessive alcohol consumption</label>
+      </div>
+      <br>
+      <h3>What is your annual income?</h3>
+      <select class="custom-select" id="incomeInput" required>
+        <option selected disabled hidden value="">Please select an option</option>
+        <option value="0">Less than $15,000</option>
+        <option value="1">$15,000 - $30,000</option>
+        <option value="2">$30,000 - $70,000</option>
+        <option value="3">$70,000 - $100,000</option>
+        <option value="4">$100,000 - $150,000</option>
+        <option value="5">$150,000 or more</option>
+      </select>
+      <br>
+      <br>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    <div class="Results">
+    <div class="results">
     </div>
   </div>
   </body>
