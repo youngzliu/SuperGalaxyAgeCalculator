@@ -6,3 +6,7 @@ body{
 .jumbotron{
   background-color: #1F1CCF;
 }
+
+#results{
+  color: #33FF00;
+}
