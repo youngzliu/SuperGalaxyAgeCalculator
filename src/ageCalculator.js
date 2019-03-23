@@ -7,36 +7,38 @@ export class AgeCalculator{
     this.income = income;
   }
 
+  //Age parameter can be specified to not calculate from age of this object.
+  //This is done to allow converting of the expectancy years.
   convertMercury(age = 0){
     const mercCoeff = .24;
     if (age === 0){
-      return this.age / mercCoeff;
+      return parseFloat((this.age / mercCoeff).toFixed(2));
     }
-    return age * mercCoeff;
+    return parseFloat((age / mercCoeff).toFixed(2));
   }
 
   convertVenus(age = 0){
     const venusCoeff = .62;
     if (age === 0){
-      return this.age / venusCoeff;
+      return parseFloat((this.age / venusCoeff).toFixed(2));
     }
-    return age * venusCoeff;
+    return parseFloat((age / venusCoeff).toFixed(2));
   }
 
   convertMars(age = 0){
     const marsCoeff = 1.88;
     if (age === 0){
-      return this.age / marsCoeff;
+      parseFloat((this.age / marsCoeff).toFixed(2));
     }
-    return age * marsCoeff;
+    return parseFloat((age / marsCoeff).toFixed(2));
   }
 
   convertJupiter(age = 0){
     const jupCoeff = 11.86;
     if (age === 0){
-      return this.age / jupCoeff;
+      return parseFloat((this.age / jupCoeff).toFixed(2));
     }
-    return age * jupCoeff;
+    return parseFloat((age / jupCoeff).toFixed(2));
   }
 
   getExpectancy(){
@@ -50,7 +52,7 @@ export class AgeCalculator{
     }
     ageMultiplier += this.exercise * .05;
     ageMultiplier -= this.badHabits * .05;
-    ageMultiplier += income * .03;
+    ageMultiplier += this.income * .03;
     let expectedAge = averageAge * ageMultiplier;
     return expectedAge - this.age;
   }
