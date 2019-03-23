@@ -10,38 +10,41 @@ _This website will allow the user to find out how old they are in terms of the y
 
 ## Specifications
 
-* _Website will allow user to enter their age and receive an output._
-  * _Example input: User enters 25 as their age._
+* _Website will allow user to enter their age and information and receive an output._
+  * _Example input: User enters their age, and fills out various information about themselves._
   * _Example output: Information will be outputted bout their age on various planets, and how long they have left to live._
 * _Website will calculate and display their age in Mercury years._
-  * _Example input: Click on a stylist, click "Add a new client to this stylist" and enter details._
-  * _Example output: Client will be added to that stylist._
+  * _Example input: User enters their age, and fills out various information about themselves._
+  * _Example output: Information will be displayed about their age in terms of Mercury years._
 * _Website will calculate and display their age in Venus years._
-  * _Example input: Click on "view all stylists" link or "See all stylists" button._
-  * _Example output: All stylists are displayed._
+  * _Example input: User enters their age, and fills out various information about themselves._
+  * _Example output: Information will be displayed about their age in terms of Venus years._
 * _Website will calculate and display their age in Mars years._
-  * _Example input: Click on a stylist's name._
-  * _Example output: Page is displayed showing the stylist's details and clients._
+  * _Example input: User enters their age, and fills out various information about themselves._
+  * _Example output: Information will be displayed about their age in terms of Mars years._
 * _Website will calculate and display their age in Jupiter years._
-  * _Example input: Click on a client's name._
-  * _Example output: Page is displayed showing the details of the client._
+  * _Example input: User enters their age, and fills out various information about themselves._
+  * _Example output: Information will be displayed about their age in terms of Jupiter years._
+* _Website will calculate and display the users expected life expectancy based on information they have inputted._
+  * _Example input: User enters their age, and fills out various information about themselves._
+  * _Example output: Website will calculate and display their life expectancy._
 * _Website will calculate and display their life expectancy in Mercury years._
-  * _Example input: Click on a client's name, then click on "Edit this client"._
-  * _Example output: Page is displayed with a form allowing you to edit the details of a client._
+  * _Example input: User enters their age, and fills out various information about themselves._
+  * _Example output: Website will calculate and display their life expectancy in Mercury years._
 * _Website will calculate and display their life expectancy in Venus years._
-  * _Example input: Click on the "Clear all stylists" button._
-  * _Example output: All the stylists will be cleared._
+* _Example input: User enters their age, and fills out various information about themselves._
+* _Example output: Website will calculate and display their life expectancy in Venus years._
 * _Website will calculate and display their life expectancy in Mars years._
-  * _Example input: Click on a stylist in the home page, and then click delete this stylist._
-  * _Example output: The stylist will be deleted._
+  * _Example input: User enters their age, and fills out various information about themselves._
+  * _Example output: Website will calculate and display their life expectancy in Mars years._
 * _Website will calculate and display their life expectancy in Jupiter years._
-  * _Example input: Click on see all clients in main page, and then click on delete all clients._
-  * _Example output: All clients will be deleted._
+  * _Example input: User enters their age, and fills out various information about themselves._
+  * _Example output: Website will calculate and display their life expectancy in Jupiter years._
 
 
 ## Setup/Installation Requirements
 
-* _Clone this Repository ($ git clone https://github.com/youngzliu/HairSalon.Solution name)_
+* _Clone this Repository ($ git clone https://github.com/youngzliu/SuperGalaxyAgeCalculator name)_
 * _Change into the work directory ($ cd SuperGalaxyAgeCalculator)_
 * _To edit the project, open the project in your preferred text editor._
 * _To run the website, navigate to the directory of SuperGalaxyAgeCalculator, and then install, build and start ($ cd SuperGalaxyAgeCalculator;
